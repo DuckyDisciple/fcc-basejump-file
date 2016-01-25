@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en" ng-app>
+  <head>
+    <title>Chat Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
+  </head>
+  <body>
+    <h1>File Meta</h1>
+    <p>Fill out the form and choose a file for upload. After submitting, you will be given a json file with the meta data.</p>
+    
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      <label for="name">File Name</label>
+      <input type="text" name="name" /><br>
+      <label for="file">Upload Location</label>
+      <input type="file" name="file"/><br>
+      <input type="submit" value="Submit"/>
+    </form>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/angular.min.js"></script>
+  </body>
+</html>
